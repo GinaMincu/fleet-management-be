@@ -57,6 +57,8 @@ REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': [
         'rest_framework.renderers.JSONRenderer',
         'rest_framework.renderers.BrowsableAPIRenderer',  # Enable Browsable API
+        'rest_framework.parsers.JSONParser',  # Ensures JSON is parsed
+        'rest_framework.parsers.FormParser',  # Accepts form-urlencoded if needed
     ],
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 10,
