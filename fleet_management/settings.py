@@ -60,9 +60,8 @@ REST_FRAMEWORK = {
         'rest_framework.parsers.JSONParser',  # Ensures JSON is parsed
         'rest_framework.parsers.FormParser',  # Accepts form-urlencoded if needed
     ],
-    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 10,
-    
+    # 'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    # 'PAGE_SIZE': 10,
 }
 
 
